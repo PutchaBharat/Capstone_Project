@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="383.935" tests="14" skipped="0" failures="1" errors="0" timestamp="2025-09-08T05:59:40.193409500Z">
+<testcase classname="Checking add to cart functionality" name="add to cart" time="31.792">
+<system-out><![CDATA[
+Given Home page in default browser..........................................passed
+When click on sign and signin with details..................................passed
+And Add an item to cart.....................................................passed
+Then close the popup........................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Checkout functionality" name="checkout" time="30.919">
+<failure type="org.openqa.selenium.ElementClickInterceptedException" message="element click intercepted: Element &lt;button class=&quot;change-product-button&quot;&gt;...&lt;/button&gt; is not clickable at point (1220, 269). Other element would receive the click: &lt;div class=&quot;float-cart__footer&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=140.0.7339.80)
+Build info: version: '4.22.0', revision: 'c5f3146703*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6c0af7c5b2de88b1c0a4e11868f82a1e, clickElement {id=f.784F6BA348AA2548E9A26AD7C87C57EF.d.7FA53B223C95AEC381DC75B5B55DB0E2.e.2114}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.80, chrome: {chromedriverVersion: 140.0.7339.80 (670b6f192f46..., userDataDir: C:\Users\PBHARA~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54482}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54482/devtoo..., se:cdpVersion: 140.0.7339.80, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (6c0af7c5b2de88b1c0a4e11868f82a1e)] -&gt; xpath: //*[@id=&quot;__next&quot;]/div/div/div[2]/div[2]/div[2]/div/div[4]/div/button[2]]
+Session ID: 6c0af7c5b2de88b1c0a4e11868f82a1e">
+<![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button class="change-product-button">...</button> is not clickable at point (1220, 269). Other element would receive the click: <div class="float-cart__footer">...</div>
+  (Session info: chrome=140.0.7339.80)
+Build info: version: '4.22.0', revision: 'c5f3146703*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6c0af7c5b2de88b1c0a4e11868f82a1e, clickElement {id=f.784F6BA348AA2548E9A26AD7C87C57EF.d.7FA53B223C95AEC381DC75B5B55DB0E2.e.2114}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.80, chrome: {chromedriverVersion: 140.0.7339.80 (670b6f192f46..., userDataDir: C:\Users\PBHARA~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54482}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54482/devtoo..., se:cdpVersion: 140.0.7339.80, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (6c0af7c5b2de88b1c0a4e11868f82a1e)] -> xpath: //*[@id="__next"]/div/div/div[2]/div[2]/div[2]/div/div[4]/div/button[2]]
+Session ID: 6c0af7c5b2de88b1c0a4e11868f82a1e
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at StepDefinition.Pageclass.addQuantity(Pageclass.java:141)
+	at StepDefinition.Checkout.add_a_product_to_cart_and_click_on_checkout(Checkout.java:29)
+	at ✽.add a product to cart and click on checkout(file:///C:/Users/P%20BHARATH/OneDrive/Desktop/java%20selenium/Capstone_Bstack/src/test/resources/Features/Checkout.feature:5)
+]]>
+</failure>
+<system-out><![CDATA[
+Given open homepage in the default browser window...........................passed
+When click on signin link and then sign in..................................passed
+And add a product to cart and click on checkout.............................failed
+And add all information and click on continue...............................skipped
+And click on download pdf...................................................skipped
+And click on continue shopping..............................................skipped
+Then close browser..........................................................skipped
+]]></system-out>
+</testcase>
+<testcase classname="Checking favourites Section" name="Adding and removing items as favourites" time="20.133">
+<system-out><![CDATA[
+Given Home page should be opened in default browser.........................passed
+When Click on signlink and signin...........................................passed
+And add an item to favourites...............................................passed
+And check in favourites section.............................................passed
+And click on the logo.......................................................passed
+And remove from favourites..................................................passed
+Then close the driver.......................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Checking Filters working or not" name="Filters" time="15.162">
+<system-out><![CDATA[
+Given open the homepage in default browser..................................passed
+When selct multiple selections using dropdown...............................passed
+Then close the driver2......................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Checking Footer links" name="Footer links" time="26.346">
+<system-out><![CDATA[
+Given open homepage in defalt browser.......................................passed
+When click on the link in footer............................................passed
+Then print message..........................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Header links" name="header links" time="18.676">
+<system-out><![CDATA[
+Given open website in default browser.......................................passed
+When click on sign and signin...............................................passed
+And navigate to offers......................................................passed
+And navigate to favourites..................................................passed
+And navigate to orders......................................................passed
+Then close the browser4.....................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Checking user login" name="Successful login" time="29.305">
+<system-out><![CDATA[
+Given Bstack website should be opened in default browser....................passed
+And Click on signin link and add username and password......................passed
+Then click on login button..................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Logout Functionality" name="LOGOUT" time="26.82">
+<system-out><![CDATA[
+Given open browser stack website in default browser.........................passed
+When click on signin and then signin........................................passed
+And click on logout.........................................................passed
+Then close the browser8.....................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Remove from cart" name="Remove from cart" time="43.531">
+<system-out><![CDATA[
+Given Open homepage in default browser......................................passed
+When click on sign in and then login........................................passed
+And add an item to cart.....................................................passed
+And remove the item from cart...............................................passed
+Then close the cart popup...................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Search Future" name="search feature - #1.1" time="26.353">
+<system-out><![CDATA[
+Given open home page in defaults browser1...................................passed
+When go to Apple and add some text and click on search......................passed
+Then close driver...........................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Search Future" name="search feature - #1.2" time="19.552">
+<system-out><![CDATA[
+Given open home page in defaults browser1...................................passed
+When go to Google and add some text and click on search.....................passed
+Then close driver...........................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Search Future" name="search feature - #1.3" time="28.331">
+<system-out><![CDATA[
+Given open home page in defaults browser1...................................passed
+When go to Vivo and add some text and click on search.......................passed
+Then close driver...........................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Search Future" name="search feature - #1.4" time="31.282">
+<system-out><![CDATA[
+Given open home page in defaults browser1...................................passed
+When go to Oppo and add some text and click on search.......................passed
+Then close driver...........................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Search Future" name="search feature - #1.5" time="35.394">
+<system-out><![CDATA[
+Given open home page in defaults browser1...................................passed
+When go to Samsung and add some text and click on search....................passed
+Then close driver...........................................................passed
+]]></system-out>
+</testcase>
+</testsuite>
